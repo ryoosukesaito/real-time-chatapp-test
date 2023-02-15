@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import socketIO from 'socket.io-client'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const socket = socketIO.connect(import.meta.env.VITE_SERVER_URL) 
+  
   return (
     <div className="App">
       <div>
