@@ -6,7 +6,7 @@ const cors = require('cors')
 const http = require('http').Server(app)
 const path = require('path')
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT //PORT=4000
 
 require('./utils/socket')(http);
 app.use(cors())

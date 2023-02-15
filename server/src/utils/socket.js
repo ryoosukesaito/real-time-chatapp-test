@@ -1,7 +1,7 @@
 module.exports = (http) => {
     const socketIO = require('socket.io')(http, {
         cors: {
-            origin: process.env.CLIENT_URL //address of client
+            origin: process.env.CLIENT_URL //http://localhost:5173
         }
     })
 
